@@ -818,7 +818,7 @@ async def main():
             print(f"Logged in as {bot.user.name} (ID: {bot.user.id})")
             print("Anti-Raid & Security System is Online!")
 
-        TOKEN = "MTU0NDE0ODAwNDMwNTYzMzI4MQ.GQD7eD.H5i5sGeVxFyf-tXUYGNPi46PbglkoMoI1WQbik"
+        TOKEN = os.getenv("TOKEN")
 
         if not TOKEN:
             print(
